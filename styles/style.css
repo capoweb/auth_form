@@ -37,7 +37,7 @@ body{
     transform-origin: bottom right;
     animation: animate linear 6s infinite;
 }
-/* .content::after{
+.content::after{
     position: absolute;
     content:'';
     width: 324px;
@@ -48,7 +48,7 @@ body{
     transform-origin: bottom right;
     animation: animate linear 6s infinite;
     animation-delay: -3s;
-} */
+}
 @keyframes animate {
     0%{
         transform: rotate(0deg);
@@ -78,7 +78,6 @@ h1{
 }
 .inputs{
     position: relative;
-    margin-bottom: 15px;
 }
 .inputBox input{
     position: relative;
@@ -131,14 +130,24 @@ h1{
 
 .links{
     width: 85%;
-    margin: 10px 0px;
+    cursor: pointer;
     display: flex;
+    font-size: 13px;
     justify-content:space-between;
 }
 .links a{
     color: #999a9a;
 }
+.links a:hover{
+    color:#45f3ff;
+}
 button{
-    height: 25px;
-    width: 270px;
+    height: 30px;
+    width: 100px;
+    margin-right: 175px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:#45f3ff;
+    border-radius: 5px;
+    
 }
